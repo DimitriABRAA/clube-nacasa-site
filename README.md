@@ -154,9 +154,29 @@ Use Ctrl+F para achar cada um.
 
 ## Como publicar as mudanças
 
-O site é hospedado na **Vercel**, conectada a este repositório. O fluxo depende de como você trabalha:
+**Leia isto antes de editar:** este repositório é uma **cópia independente** do site. Ele **não** está ligado ao ar — editar aqui **não** altera o `clubenacasa.com.br`, que é publicado a partir de outro repositório.
 
-**Pelo site do GitHub (mais simples):** abra o `index.html` aqui no GitHub, clique no lápis (✏️), edite, e clique em *Commit changes*. A Vercel publica sozinha em cerca de 1 minuto.
+Isso é proposital: você pode mexer à vontade sem risco de derrubar o site que está vendendo.
+
+### Para ver a sua versão no ar
+
+Escolha um destes caminhos. Os três são gratuitos:
+
+**GitHub Pages** (o mais rápido, sem sair do GitHub)
+1. Aqui no repositório, vá em **Settings → Pages**
+2. Em *Source*, escolha **Deploy from a branch**
+3. Selecione a branch `main` e a pasta `/ (root)`, e clique em **Save**
+4. Em uns 2 minutos o site estará em `https://SEU-USUARIO.github.io/clube-nacasa-site/`
+
+**Netlify** — entre em [netlify.com](https://netlify.com), clique em *Add new site → Import an existing project*, conecte este repositório e confirme. Não preencha comando de build nem pasta de publicação: o site é HTML puro.
+
+**Vercel** — entre em [vercel.com](https://vercel.com), clique em *Add New → Project*, importe este repositório e confirme. Mesma coisa: sem comando de build.
+
+Nos três casos, depois de conectado, **toda alteração salva aqui publica sozinha** em cerca de 1 minuto.
+
+### Como salvar uma alteração
+
+**Pelo site do GitHub (mais simples):** abra o `index.html` aqui no GitHub, clique no lápis (✏️), edite, role até o fim e clique em **Commit changes**.
 
 **Pelo computador:**
 
@@ -166,7 +186,9 @@ git commit -m "descrição do que mudou"
 git push
 ```
 
-> **Importante:** quem controla a publicação é a conta da Vercel ligada a este repositório. Se a Vercel não estiver conectada, as mudanças ficam salvas aqui mas não aparecem no ar. Quem cuida da hospedagem precisa fazer essa ligação uma vez.
+### Se quiser levar a mudança para o site oficial
+
+As alterações feitas aqui precisam ser passadas para quem cuida do `clubenacasa.com.br`. O caminho mais simples é avisar a pessoa responsável e indicar o que mudou.
 
 ---
 
